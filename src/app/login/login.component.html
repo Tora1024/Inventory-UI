@@ -1,0 +1,30 @@
+﻿<div class='login_container d-flex flex-column justify-content-center align-items-center'>
+    <div class='headings-container'>
+        <h1 class='heading1 thin-text'>{{heading1}}</h1>
+        <h2 class='heading2 thin-text'>{{heading2}}</h2>
+    </div>
+    <div class='login-form-container'>
+        <form>
+            <div class='form-group'>
+                <label class='bold-text text-size' for='exampleInputEmail1'>{{email}}</label>
+                <input type='email' class='form-control' id='exampleInputEmail1' aria-describedby='emailHelp' placeholder='Enter email'>
+            </div>
+            <div class='form-group'>
+                <div class='d-flex justify-content-between'>
+                    <label class='bold-text text-size' for='exampleInputPassword1'>{{password}}</label>
+                    <small id='emailHelp' class='form-text text-muted'><a>{{forgotPassword}}</a></small>
+                </div>
+                <input type='password' class='form-control' id='exampleInputPassword1' placeholder='Password'>
+            </div>
+            <div class='form-check'>
+                <label class='form-check-label text-muted text-size'>
+                <input type='checkbox' class='form-check-input'>
+                {{keepLogged}}
+                </label>
+            </div>
+            <div class='btn-group d-flex justify-content-center'>
+                <button type='submit' class='btn btn-primary btn-width center-block'>{{login}}</button>
+            </div>
+        </form>
+    </div>
+</div>
