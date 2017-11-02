@@ -1,9 +1,20 @@
-.main-container {
+.full-height {
   height: 100%;
 }
-
+.full-width {
+  width: 100%;
+}
 .content-container {
   height: 84%;
   padding: 0 20px;
   max-width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .side-bg {
+    background-image: url('../assets/large_side.png');
+    width: 30%;
+    background-size: cover;
+    background-position: center bottom;
+  }
 }
