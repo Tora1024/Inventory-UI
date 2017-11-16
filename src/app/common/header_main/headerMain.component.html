@@ -1,0 +1,21 @@
+﻿<nav class='header-container d-flex justify-content-between align-items-center'>
+  <a [routerLink]='["/"]'><img class='gorilla-logo' src='../../../assets/GL_Logo_wht.png'></a>
+  <nav class='d-flex align-items-center justify-content-between'>
+    <section class='current-user-wrapper'>
+      <div class='current-user d-flex align-items-center'>
+        <div class='avatar'>
+          {{currentUser.firstName.charAt(0)}}
+        </div>
+        <div>
+          <div class='bold-text name'>
+            {{currentUser.firstName}}
+          </div>
+          <div class='email'>
+            {{currentUser.username}}
+          </div>
+        </div>
+      </div>
+    </section>
+    <a [routerLink]='["/login"]' class='btn nav-text2'>{{logout}}</a>
+  </nav>
+</nav>

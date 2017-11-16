@@ -1,24 +1,16 @@
 .login_container {
   height: 100%;
   margin: auto;
-  max-width: 450px;
+  max-width: 500px;
 }
 
-.login-form-container {
+.box-form-container {
   width: 100%;
 }
 
 .headings-container {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   width: 100%;
-}
-
-.heading1 {
-  font-size: 28px;
-}
-
-.heading2 {
-  font-size: 16px;
 }
 
 .btn-width {
@@ -26,7 +18,8 @@
   width: 200px;
 }
 
-.text-size {
-  font-size: 14px;
+.small-link {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #818182;
 }
-

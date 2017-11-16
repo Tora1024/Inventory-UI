@@ -1,0 +1,35 @@
+.itemList-container {
+  margin: 0 5%;
+  border-top: 1px solid #868e96;
+}
+
+.itemList-row {
+  border-bottom: 1px solid #868e96;
+  padding: 20px 0;
+}
+
+.itemList-row-heading {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.btn-details {
+  padding: 5px 20px;
+  color: #343a40;
+  display: none;
+}
+
+.btn-arrow {
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-details {
+    display: block;
+  }
+}

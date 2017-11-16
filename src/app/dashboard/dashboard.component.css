@@ -1,0 +1,31 @@
+.dashboard_container {
+  height: 100%;
+}
+
+.top-header {
+  background-color: #202433;
+  color: #BCBDC2;
+  padding: 20px;
+  font-size: 25px;
+  height: 130px;
+}
+
+.btn-txt {
+  font-size: 14px;
+}
+
+.filter-text {
+  font-size: 12px;
+}
+
+.filters {
+  height: 160px;
+  margin: 0 5%;
+  padding: 20px 0;
+}
+
+.dropdown-custom {
+  background-color: #fff;
+  border: 1px solid #868e96;
+  margin-left: 10px;
+}

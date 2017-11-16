@@ -1,0 +1,24 @@
+<div class='panel panel-primary itemList-container'>
+	<div class='panel-body'>
+		<section class='table d-flex flex-column' *ngIf='itemTypes && itemTypes.length'>
+			<div *ngFor='let itemType of itemTypes' class='itemList-row d-flex justify-content-between align-items-center'>
+				<main>
+					<div class='itemList-row-heading'>
+						<a class='clickable'>{{ itemType.name }} - {{ itemType.description }}</a>
+					</div>
+					<div class='small-gray-text'>
+						{{ itemType.id }} - {{ itemType.type }} - Date created {{ itemType.createDate }}
+					</div>
+				</main>
+				<aside class='d-flex align-items-center'>
+					<button type="button" class="btn btn-sm btn-details">
+						View Details
+					</button>
+					<button type="button" class="btn btn-sm btn-arrow bold-text">
+						v
+					</button>
+				</aside>
+			</div>
+		</section>
+	</div>
+</div>
