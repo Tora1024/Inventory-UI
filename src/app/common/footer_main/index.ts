@@ -1,1 +1,1 @@
-export * from './footerMain.component';
+export * from "./footerMain.component";

@@ -1,0 +1,16 @@
+export interface IFacility {
+  "id": number,
+  "name": string,
+  "phone": number,
+  "email": string,
+  "managerId": number,
+  "address1": string,
+  "address2": string,
+  "city": string,
+  "stateProvince": string,
+  "postalCode": number,
+  "latitude": number,
+  "longitude": number,
+  "createDate": string,
+  "editDate": string,
+}

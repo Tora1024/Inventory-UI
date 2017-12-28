@@ -6,16 +6,16 @@
         <div class='avatar'>
           {{currentUser.firstName.charAt(0)}}
         </div>
-        <div>
-          <div class='bold-text name'>
+        <div class='small-text nav-text-color'>
+          <div class='bold-text'>
             {{currentUser.firstName}}
           </div>
-          <div class='email'>
+          <div>
             {{currentUser.username}}
           </div>
         </div>
       </div>
     </section>
-    <a [routerLink]='["/login"]' class='btn nav-text2'>{{logout}}</a>
+    <a [routerLink]='["/login"]' class='btn small-text nav-text-color'>{{logout}}</a>
   </nav>
 </nav>

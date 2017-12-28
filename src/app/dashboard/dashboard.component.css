@@ -1,31 +1,64 @@
-.dashboard_container {
-  height: 100%;
-}
-
 .top-header {
   background-color: #202433;
-  color: #BCBDC2;
-  padding: 20px;
-  font-size: 25px;
-  height: 130px;
+  padding: 20px 5%;
+  height: 200px;
 }
 
-.btn-txt {
-  font-size: 14px;
+.btn-width {
+  width: 188px;
 }
 
-.filter-text {
-  font-size: 12px;
-}
-
-.filters {
-  height: 160px;
+.filters-wrapper {
   margin: 0 5%;
   padding: 20px 0;
 }
 
-.dropdown-custom {
-  background-color: #fff;
-  border: 1px solid #868e96;
+.filters-container {
+  margin: 10px 10px 10px 0;
+}
+
+.space-left {
   margin-left: 10px;
+}
+
+.gray-border {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+
+.space-top-bottom {
+  margin: 10px 0;
+}
+
+.btn-container {
+  width: 390px;
+  height: 90px;
+}
+
+.plus-space {
+  margin-right: 5px;
+}
+
+.modal-buttons {
+  border-top: 1px solid #e9ecef;
+  padding: 15px 15px 0 15px;
+  margin: 0 -15px;
+}
+
+@media screen and (max-width: 435px) {
+  .heading-mobile {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .top-header {
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .btn-container {
+    width: 200px;
+  }
 }

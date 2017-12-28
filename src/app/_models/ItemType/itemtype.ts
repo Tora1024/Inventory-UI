@@ -4,6 +4,6 @@ export interface IItemType {
   "name": string,
   "description": string,
   "createDate": string,
-  "editDate": number,
+  "editDate": string,
   "administratorId": number,
 }

@@ -1,17 +1,10 @@
-.full-height {
-  height: 100%;
-}
-.full-width {
-  width: 100%;
-}
-.content-container {
+.login-container {
   height: 84%;
   padding: 0 20px;
   max-width: 100%;
 }
 
 .main-container {
-  height: 100%;
   max-width: 100%;
 }
 

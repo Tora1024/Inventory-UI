@@ -1,35 +1,84 @@
-/* You can add global styles to this file, and also import other style files */
-html, body {
+/****** Some globals needed for the whole structure to behave accordingly ******/
+
+/* TODO: use variables in js to set out defaults like colors or pixels */
+
+html,
+body {
   height: 100%;
 }
 
-.heading1 {
-  font-size: 28px;
+/****** Certain default values made in individual classes ******/
+
+.bootstrap-black {
+  color: #373a3c;
 }
 
-.heading2 {
+.bootstrap-gray {
+  color: #818a91;
+}
+
+.bootstrap-blue {
+  color: #007bff;
+}
+
+.nav-text-color {
+  color: #fdfdfe;
+}
+
+.heading1-text {
+  font-size: 42px;
+  font-weight: 300; /*light*/
+}
+
+.heading2-text {
+  font-weight: 500; /*medium*/
+  font-size: 24px;
+}
+
+.heading3-text {
+  font-weight: 300; /*light*/
+  font-size: 20px;
+}
+
+.heading4-text {
+  font-weight: 500; /*medium*/
+  font-size: 18px;
+}
+
+.body-text {
   font-size: 16px;
+  font-weight: 400; /*regular*/
 }
 
-.text-size {
+.label-text {
+  font-size: 16px;
+  font-weight: 700; /*bold*/
+}
+
+.small-text {
+  font-size: 13px;
+  font-weight: 400; /*regular*/
+}
+
+.badge-text {
+  font-size: 12px;
+  font-weight: 700; /*bold*/
+}
+
+.invalid-text {
+  color: #dc3545;
   font-size: 14px;
-}
-
-.thin-text {
-  font-weight: 300;
+  margin-top: 5px;
 }
 
 .bold-text {
   font-weight: bold;
 }
 
-.invalid-text {
-  color: #dc3545;
-  font-size: 14px;
-  margin-top: 5px; 
+.full-height {
+  height: 100%;
 }
 
-.small-gray-text {
-  font-size: 12px;
-  color: #868e96;
+.full-width {
+  width: 100%;
 }

@@ -1,0 +1,86 @@
+<button 
+  type='button' 
+  class='btn btn-primary' 
+  (click)='itemTypeModal.show()'
+>
+  <span class='bold-text plus-space'>+</span>
+  Add new item type
+</button>
+<div 
+  class='modal fade' 
+  bsModal 
+  #itemTypeModal='bs-modal'
+  tabindex='-1' 
+  role='dialog' 
+  aria-labelledby='addNewItemTypeModal' 
+  aria-hidden='true'
+>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-header d-flex align-items'>
+        <h4 class='modal-title bootstrap-black heading2-text'>Add item type</h4>
+        <button type='button' class='close pull-right' aria-label='Close' (click)='itemTypeModal.hide()'>
+          <span aria-hidden='true'>&times;</span>
+        </button>
+      </div>
+      <div class='modal-body'>
+        <form class='d-flex flex-column' name='itemTypeForm' (ngSubmit)='itemTypeForm.form.valid && submitItemType()' #itemTypeForm='ngForm' novalidate>
+          <section class='input-space d-flex flex-column justify-between'>
+            <div class='label-text bold-text bootstrap-black label-space'>Item category</div>
+            <div class='btn-group' dropdown>
+              <button dropdownToggle type='button' class='btn btn-sm dropdown-toggle gray-border btn-block d-flex justify-content-between align-items-center bootstrap-gray'>
+                <span>{{selectedItemType}}</span>
+                <span class='caret'></span>
+              </button>
+              <div *dropdownMenu class='dropdown-menu' role='menu'>
+                <div *ngFor='let itemType of itemTypesConstant'>
+                  <div role='menuitem'><button class='dropdown-item' (click)='ChangeCurrentItemType(itemType); $event.preventDefault()'>{{itemType}}</button></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class='input-space d-flex flex-column justify-between'>
+            <label class='label-text bold-text bootstrap-black label-space' for='itemNameInput'>Item name</label>
+            <div>
+              <input 
+                type='text' 
+                class='form-control form-control-sm' 
+                placeholder='Item name'
+                name='itemName'
+                [(ngModel)]='model.itemName' 
+                #itemNameInput='ngModel'
+              >
+            </div>
+          </section>
+          <section class='input-space d-flex flex-column justify-between'>
+            <label class='label-text bold-text bootstrap-black label-space' for='itemDescriptionInput'>Description</label>
+            <div>
+              <textarea 
+                class='form-control form-control-sm' 
+                placeholder='Item description'
+                name='itemDescription'
+                [(ngModel)]='model.itemDescription' 
+                #itemDescriptionInput='ngModel'
+              ></textarea>
+            </div>
+          </section>
+          <section class='input-space d-flex flex-column justify-between'>
+            <label class='label-text bold-text bootstrap-black label-space' for='description'>Upload item photo ...</label>
+            <div>
+              <input type='file' class='form-control-file'>
+            </div>
+          </section>
+          <section class='input-space d-flex flex-column justify-between'>
+            <label class='label-text bold-text bootstrap-black' for='description'>Date created {{dateCreated | date:'short'}}</label>
+          </section>
+          <div class='modal-buttons d-flex justify-content-end'>
+            <div>
+              <button type='button' class='btn gray-border' (click)='itemTypeModal.hide(); this.cleanForm()'>Cancel</button>
+              <button type='submit' class='btn gray-border'>Add item type</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

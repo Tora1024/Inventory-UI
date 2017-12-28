@@ -1,17 +1,11 @@
 .header-container {
-  padding: 10px;
+  padding: 20px 3%;
   background-color: #202433;
 }
 
 .gorilla-logo {
-  width: 80px;
+  width: 100px;
   padding-left: 10px;
-}
-
-.nav-text2 {
-  color: #BCBDC2;
-  font-size: 11px;
-  font-weight: 300;
 }
 
 .current-user-wrapper {
@@ -19,11 +13,9 @@
 }
 
 .current-user {
-    color: #BCBDC2;
-
-    border-right: 1px solid #676B73;
-    padding-right: 20px; 
-  }
+  border-right: 1px solid #676B73;
+  padding-right: 20px; 
+}
 
 .avatar {
   margin-right: 10px;
@@ -34,15 +26,6 @@
   color: #fdfdfe;
   text-align: center;
   font-size: 20px;
-}
-
-.name {
-  color: #fdfdfe;
-  font-size: 12px;
-}
-
-.email {
-  font-size: 10px;
 }
 
 @media screen and (min-width: 425px) {

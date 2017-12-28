@@ -1,27 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { IItemType } from '../../_models/ItemType/index';
-import { ItemTypeService } from '../../_services/ItemType/index';
+import { Component, Input } from '@angular/core';
+import { IItemList } from '../../_models/ItemList/index';
+import 'rxjs/add/operator/do';
 
 @Component({
   selector: 'itemTypeList',
-  providers: [ItemTypeService],
   templateUrl: './itemType-list.component.html',
   styleUrls: ['./itemType-list.component.css'],
 })
-export class ItemTypeListComponent implements OnInit {
-  itemTypes: IItemType[] = [];
-  errorMsg: string;
-
-  constructor(private _itemTypeService: ItemTypeService) {    
-    
-  }
+export class ItemTypeListComponent   {
+  @Input() mergedItemList: IItemList[];
   
-  ngOnInit(): void {
-    this._itemTypeService.getItemTypes()
-      .subscribe(itemTypes => {
-        this.itemTypes = itemTypes;
-      },
-      error => this.errorMsg = <any>error
-    );
-  }
+  errorMsg: string;
+  isCollapsed: boolean = true;
+
+  collapsed(event: any): void {}
+  expanded(event: any): void {}
 }
